@@ -6,6 +6,7 @@ Created on Mon Feb  8 16:29:42 2021
 @author: Reed Riggs
 """
 
+#this is more toward the goal of having mutable objects to pass through functions and/or classes so users can flexibly modify story elements.
 def 故事_一(**dict):
   甲 = dict['甲']
   乙 = dict['乙']
