@@ -25,3 +25,5 @@ print(故事二)
 
 print(故事一2)
 print(故事二2)
+
+#Next steps: use a class or function or both to make plug-and-go story text alternatives
