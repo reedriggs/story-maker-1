@@ -66,4 +66,5 @@ pet2 = set2.owner()
 
 print(故事一a)
 print(故事二a)
-    
+
+#Next step: use class sets and the value definitions that follow to make it easier to define a person and their associated characteristics, belongings, and quoted speech, in order to more easily plug different such sets into one text context.
