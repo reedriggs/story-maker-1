@@ -1,4 +1,67 @@
 
+
+class Person_en:
+  def __init__(self, name, pron1, pron2, pron3, description):
+    self.name = name
+    self.pron1 = pron1
+    self.pron2 = pron2
+    self.pron3 = pron3
+    self.descr = description
+
+protag1 = Person_en("Jim", "he", "him", "his", "a simple sort of man")
+protag2 = Person_en("Jen", "she", "her", "hers", "a sharply perceptive woman")
+antag1 = Person_en("Reginald", "they", "them", "their", "a mean, untrusting type of person")
+
+class Animal_en:
+  def __init__(self, species, name, pron1, pron2, pron3, description):
+    self.spec = species
+    self.name = name
+    self.pron1 = pron1
+    self.pron2 = pron2
+    self.pron3 = pron3
+    self.descr = description
+
+pet1 = Animal_en('dog', 'Scoobert', "he", "him", "his", 'a big happy puppy')
+
+class Place_en:
+  def __init__(self, name, description1, description2):
+    self.name = name
+    self.descr1 = description1
+    self.descr2 = description2
+
+home = Place_en('Atlanta', 'a very green and very sunny place to live', 'a place where childhood memories would remimain, but was not a home to adventure')
+
+#this approach, for count and mass noun items, passes dictionary entries. While it might complicate things, with a little more work, it might also help story elements be more flexibly added 
+
+count_item1 = {
+	'sing':'mug',
+	'plur':'mugs',
+	'artic':'a',
+	'description1':'medium sized',
+	'descr1_artic':'a',
+	'description2':'thing filled with memories',
+	'descr2_artic': 'a',
+	}
+
+class C_item:
+  def __init__(self, count_item1):
+    self.sing = count_item1['sing']
+    self.plur = count_item1['plur']
+    self.artic = count_item1['artic']
+    self.descr1 = count_item1['description1']
+    self.descr1_artic = count_item1['descr1_artic']
+    self.descr2 = count_item1['description2']
+    self.descr2_artic = count_item1['descr2_artic']
+
+item1 = C_item(count_item1)
+
+print(f"There, in the middle of the floor was {item1.artic} {item1.sing}. It was {item1.descr1_artic} {item1.descr1} {item1.sing}, and it was {item1.descr2_artic} {item1.descr2}.")
+
+print(f"... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}.")
+
+
+
+"""
 #This can be a class-ier way to substitute story elements.
 
 class Protag_en:
@@ -15,7 +78,7 @@ protag2 = Protag_en("Jen", "she", "her", "hers")
 
 print("Our hero is " + protag1.name + ". One day", protag1.pron1, "had a thought.", protag1.pron1.capitalize(), "wanted to go for a swim.", "At the lake", protag1.name, "saw", protag2.name + ".", protag2.pron1.capitalize(), "looked at", protag1.name + ".")
 
-
+"""
 
 
 """
