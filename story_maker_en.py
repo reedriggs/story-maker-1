@@ -1,4 +1,11 @@
 
+import random
+
+#This helps randomize story elements and plot templates in each story print-out:
+def randomize(n):
+  random_int = random.randint(1,n)
+  return random_int
+
 #Create story people here:
 people = {
     1: {
@@ -89,19 +96,14 @@ class Person_en:
     self.pron3 = dict['pron3']
     self.descr = dict['descr']
 
-#This helps randomize story elements and plot templates in each story print-out:
-def randomize(N):
-  random_int = random.randint(1,N)
-  return random_int
-
-peopN = randomize(3)
-protag1 = Person_en(people[peopN]['protag1'])
-protag2 = Person_en(people[peopN]['protag2'])
-antag1 = Person_en(people[peopN]['antag1'])
+peopR = randomize(len(people))
+protag1 = Person_en(people[peopR]['protag1'])
+protag2 = Person_en(people[peopR]['protag2'])
+antag1 = Person_en(people[peopR]['antag1'])
 
 #Create animals here:
-animal_set1 = {
-  'animal1':{
+animals = {
+  1:{
     'spec':'dog',
     'name':'Scoobert',
     'pron1':'he',
@@ -110,7 +112,7 @@ animal_set1 = {
     'descr':'a big happy puppy'
     },
 
-  'animal2':{
+  2:{
     'spec':'cat',
     'name':'Furbz',
     'pron1':'she',
@@ -130,14 +132,23 @@ class Animal_en:
     self.pron3 = dict['pron3']
     self.descr = dict['descr']
 
-pet1 = Animal_en(animal_set1['animal1'])
+animR = randomize(len(animals))
+pet1 = Animal_en(animals[animR])
 
 #Create places here:
-place1_features = {
+
+places = {
+  1: {
     'name':'Atlanta',
     'descr1':'a very green and very sunny place to live',
     'descr2':'a place where childhood memories would remimain, but was not a home to adventure'
-    }
+    },
+  2: {
+    'name':'Boise',
+    'descr1':'a quiet place',
+    'descr2':'a very boring place'
+    },
+}
 
 #Leave alone.
 class Place_en:
@@ -146,31 +157,31 @@ class Place_en:
     self.descr1 = dict['descr1']
     self.descr2 = dict['descr2']
 
-home = Place_en(place1_features)
+placeR = randomize(len(places))
+home = Place_en(places[placeR])
 
 #Create physical items for the story:
-count_item1 = {
-	'sing':'mug',
-	'plur':'mugs',
-	'determiner':'a',
-	'description1':'medium sized',
-	'descr1_det':'a',
-	'description2':'thing filled with memories',
-	'descr2_det': 'a',
-	}
 
-appliance1 = {
-	'sing':'kitchen sink',
-	'plur':'kitchen sinks',
-	'determiner':'a',
-	'description1':'large',
-	'descr1_det':'a',
-	'description2':'well functioning',
-	'descr2_det': 'a',
-	
-}
-
-mass_item1 = {
+items = {
+  1: {
+    'sing':'mug',
+    'plur':'mugs',
+    'determiner':'a',
+    'description1':'medium sized',
+    'descr1_det':'a',
+    'description2':'thing filled with memories',
+    'descr2_det': 'a',
+    },
+  2: {
+    'sing':'kitchen sink',
+    'plur':'kitchen sinks',
+    'determiner':'a',
+    'description1':'large',
+    'descr1_det':'a',
+    'description2':'well functioning',
+    'descr2_det': 'a',
+    },
+  3: {
     'sing':'water',
     'plur':'water',
     'determiner':'some',
@@ -179,6 +190,7 @@ mass_item1 = {
     'description2':'thing filled with memories',
     'descr2_det': 'a',
     }
+}
 
 #leave alone
 class Item:
@@ -190,10 +202,12 @@ class Item:
     self.descr1_det = dict['descr1_det']
     self.descr2 = dict['description2']
     self.descr2_det = dict['descr2_det']         
-    
-item1 = Item(count_item1)
-item2 = Item(mass_item1)
-appliance1 = Item(appliance1)
+
+itemR = randomize(len(items))
+
+item1 = Item(items[itemR])
+item2 = Item(items[itemR])
+appliance1 = Item(items[itemR])
 
 #Modify plot template(s) here:
 plot1 = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}. Had they all"
@@ -208,4 +222,3 @@ plot = {
 #A goal is to be able to simply call plot templates with slot content
 print_story = randomize(2)
 print(plot[str(print_story)])
-
