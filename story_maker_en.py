@@ -1,28 +1,84 @@
 
 #Create story people here:
-protag1 = {
+people = {
+    1: {
+    'protag1':{
     'name':'Jim',
     'pron1':'he',
     'pron2':'him',
     'pron3':'his',
     'descr':'a simple sort of man'
-    }
+    },
 
-protag2 = {
+  'protag2':{
     'name':'Jen',
     'pron1':'she',
     'pron2':'her',
     'pron3':'her',
     'descr':'a sharply perceptive woman'
-    }
+    },
 
-antag1 = {
+  'antag1':{
     'name':'Reginald',
     'pron1':'they',
     'pron2':'them',
     'pron3':'their',
     'descr':'a mean, untrusting type of person'
     }
+  },
+
+  2: {
+    'antag1':{
+    'name':'Jim',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a simple sort of man'
+    },
+
+  'protag1':{
+    'name':'Jen',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'her',
+    'descr':'a sharply perceptive woman'
+    },
+
+  'protag2':{
+    'name':'Reginald',
+    'pron1':'they',
+    'pron2':'them',
+    'pron3':'their',
+    'descr':'a mean, untrusting type of person'
+    }
+  },
+
+  3: {
+    'protag2':{
+    'name':'Jim',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a simple sort of man'
+    },
+
+    'antag1':{
+    'name':'Jen',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'her',
+    'descr':'a sharply perceptive woman'
+    },
+
+    'protag1':{
+    'name':'Reginald',
+    'pron1':'they',
+    'pron2':'them',
+    'pron3':'their',
+    'descr':'a mean, untrusting type of person'
+    }
+  }
+}
 
 #This is back end stuff to leave alone.
 class Person_en:
@@ -33,19 +89,36 @@ class Person_en:
     self.pron3 = dict['pron3']
     self.descr = dict['descr']
 
-protag1 = Person_en(protag1)
-protag2 = Person_en(protag2)
-antag1 = Person_en(antag1)
+#This helps randomize story elements and plot templates in each story print-out:
+def randomize(N):
+  random_int = random.randint(1,N)
+  return random_int
+
+peopN = randomize(3)
+protag1 = Person_en(people[peopN]['protag1'])
+protag2 = Person_en(people[peopN]['protag2'])
+antag1 = Person_en(people[peopN]['antag1'])
 
 #Create animals here:
-animal1 = {
+animal_set1 = {
+  'animal1':{
     'spec':'dog',
     'name':'Scoobert',
     'pron1':'he',
     'pron2':'him',
     'pron3':'his',
     'descr':'a big happy puppy'
+    },
+
+  'animal2':{
+    'spec':'cat',
+    'name':'Furbz',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'her',
+    'descr':'a big happy puppy'
     }
+}
 
 #Leave alone.
 class Animal_en:
@@ -57,7 +130,7 @@ class Animal_en:
     self.pron3 = dict['pron3']
     self.descr = dict['descr']
 
-pet1 = Animal_en(animal1)
+pet1 = Animal_en(animal_set1['animal1'])
 
 #Create places here:
 place1_features = {
@@ -86,6 +159,17 @@ count_item1 = {
 	'descr2_det': 'a',
 	}
 
+appliance1 = {
+	'sing':'kitchen sink',
+	'plur':'kitchen sinks',
+	'determiner':'a',
+	'description1':'large',
+	'descr1_det':'a',
+	'description2':'well functioning',
+	'descr2_det': 'a',
+	
+}
+
 mass_item1 = {
     'sing':'water',
     'plur':'water',
@@ -109,7 +193,19 @@ class Item:
     
 item1 = Item(count_item1)
 item2 = Item(mass_item1)
+appliance1 = Item(appliance1)
 
 #Modify plot template(s) here:
-print(f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}.")
-print(f"... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}.")
+plot1 = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}. Had they all"
+
+plot2 = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capitalize()} was holding a part from {appliance1.det} {appliance1.descr1} {appliance1.sing}. "I think I did this before," {protag1.pron1} said to {protag1.pron2}self. {protag1.name} looked around. "I should go," {protag1.pron1} said. '
+#Create dictionaries containing plot templates
+plot = {
+	'1':plot1,
+	'2':plot2
+}
+
+#A goal is to be able to simply call plot templates with slot content
+print_story = randomize(2)
+print(plot[str(print_story)])
+
