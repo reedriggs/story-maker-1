@@ -214,11 +214,11 @@ plot1 = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was
 
 plot2 = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capitalize()} was holding a part from {appliance1.det} {appliance1.descr1} {appliance1.sing}. "I think I did this before," {protag1.pron1} said to {protag1.pron2}self. {protag1.name} looked around. "I should go," {protag1.pron1} said. '
 #Create dictionaries containing plot templates
-plot = {
-	'1':plot1,
-	'2':plot2
+plots = {
+	1:plot1,
+	2:plot2
 }
 
 #A goal is to be able to simply call plot templates with slot content
-print_story = randomize(2)
-print(plot[str(print_story)])
+plotR = randomize(len(plots))
+print(plots[plotR])
