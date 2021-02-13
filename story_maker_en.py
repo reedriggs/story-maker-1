@@ -238,6 +238,7 @@ def randomize(n):
   random_int = random.randint(1,n)
   return random_int
 
+#These objects pull randomized people from the dictionaries above, plug them into the classes above, and makes them callable by story role
 peopR = randomize(len(people_distr))
 protag1 = Person_en(people_distr[peopR]['protag1'])
 protag2 = Person_en(people_distr[peopR]['protag2'])
