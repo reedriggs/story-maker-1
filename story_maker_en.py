@@ -183,7 +183,6 @@ items_distr = {
 }
 
 #Create places here:
-
 places_distr = {
   1: {
     'name':'Atlanta',
@@ -198,7 +197,7 @@ places_distr = {
 }
 
 
-#Class categories make people-related words substitutable in the plot template texts, below.
+#Class categories make story-related words substitutable in the plot template texts, below.
 class Person_en:
   def __init__(self, dict):
     self.name = dict['name']
@@ -234,7 +233,6 @@ class Item_en:
     self.descr2 = dict['description2']
     self.descr2_det = dict['descr2_det']         
 
-
 #This helps randomize story elements and plot templates in each story print-out:
 def randomize(n):
   random_int = random.randint(1,n)
@@ -256,11 +254,9 @@ appliance1 = Item_en(items_distr[itemR])
 placeR = randomize(len(places_distr))
 home = Place_en(places_distr[placeR])
 
-
 #Modify plot template(s) here:
 plot1 = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}. They had all been here before."
 plot2 = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capitalize()} was holding a part from {appliance1.det} {appliance1.descr1} {appliance1.sing}. "I think I did this before," {protag1.pron1} said to {protag1.pron2}self. {protag1.name} looked around. "I should go," {protag1.pron1} said. '
-
 
 #Create dictionaries containing plot templates
 plots = {
@@ -271,5 +267,6 @@ plots = {
 #A goal is to be able to simply call plot templates with slot content
 plotR = randomize(len(plots))
 
+#"print(story)" feels more elegant, a simple command to end the complicated process
 story = plots[plotR]
 print(story)
