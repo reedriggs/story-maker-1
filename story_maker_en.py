@@ -1,46 +1,123 @@
 import random
 
 #Create people for the story in Python dictionary format, providing category information that match the Person_en class below:
-Jim = {
-    'name':'Jim',
+Amaia_Hail = {
+    'name':'Amaia',
+    'surname':'Hail',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'a sharp-witted human being',
+    'surpised': 'Hotchie motchie!'
+    }
+Mia_Wind = {
+    'name':'Mia',
+    'surname':'Wind',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'a competitive maker-happener',
+    'surpised': 'What is all this?!'
+    }
+Lyla_Card = {
+    'name':'Lyla',
+    'surname':'Card',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'a steadfast fixer of things',
+    'surpised': 'Show me more.'
+    }
+Cora_Wool = {
+    'name':'Cora',
+    'surname':'Wool',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'a caregiver at heart',
+    'surpised': 'Yes, okay...'
+    }
+River_Light = {
+    'name':'River',
+    'surname':'Light',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'a sharply perceptive person',
+    'surpised': 'What now?'
+    }
+Rhett_Hare = {
+    'name':'Rhett',
+    'surname':'Hare',
     'pron1':'he',
     'pron2':'him',
     'pron3':'his',
-    'descr':'a simple sort of man'
+    'descr':'a steadfast fixer of things',
+    'surpised': 'Hehhhhhhh.'
     }
-Jen = {
-    'name':'Jen',
-    'pron1':'she',
-    'pron2':'her',
-    'pron3':'her',
-    'descr':'a sharply perceptive woman'
+Samuel_Journey = {
+    'name':'Samuel',
+    'surname':'Journey',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a sharp-witted human being',
+    'surpised': 'Bring it!'
     }
-Reginald = {
-    'name':'Reginald',
-    'pron1':'they',
-    'pron2':'them',
-    'pron3':'their',
-    'descr':'a mean, untrusting type of person'
+Lorenzo_Wind = {
+    'name':'Lorenzo',
+    'surname':'Wind',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a sharply perceptive person',
+    'surpised': 'What is happening?'
+    }
+Bennett_Feel = {
+    'name':'Bennett',
+    'surname':'Feel',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a caregiver at heart',
+    'surpised': 'Hmm.' 
+    }
+Matias_Pie = {
+    'name':'Matias',
+    'surname':'Pie',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a competitive maker-happener',
+    'surpised': 'Cool, cool, cool.' 
     }
 
 #Group people into story roles here:
 people_distr = {
     1: {
-    'protag1':Jim,
-    'protag2':Jen,
-    'antag1':Reginald
+    'protag1':Amaia_Hail,
+    'protag2':Rhett_Hare,
+    'antag1':Lyla_Card
     },
-
     2: {
-    'protag1':Reginald,
-    'protag2':Jim,
-    'antag1':Jen
+    'protag1':Samuel_Journey,
+    'protag2':Mia_Wind,
+    'antag1':River_Light
     },
-
     3: {
-    'protag1':Jen,
-    'protag2':Reginald,
-    'antag1':Jim
+    'protag1':Mia_Wind,
+    'protag2':Bennett_Feel,
+    'antag1':Lyla_Card
+    },
+    4: {
+    'protag1':Lorenzo_Wind,
+    'protag2':River_Light,
+    'antag1':Cora_Wool
+    },
+    5: {
+    'protag1':Cora_Wool,
+    'protag2':Matias_Pie,
+    'antag1':Lorenzo_Wind
     }
 }
 
@@ -194,4 +271,5 @@ plots = {
 #A goal is to be able to simply call plot templates with slot content
 plotR = randomize(len(plots))
 
-print(plots[plotR])
+story = plots[plotR]
+print(story)
