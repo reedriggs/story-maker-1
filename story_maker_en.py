@@ -147,7 +147,7 @@ Snakey = {
     'descr':'a cute ribbon snake'
     }
 Fuzzy = {
-    'spec':'rar',
+    'spec':'rat',
     'name':'Fuzzy',
     'pron1':'he',
     'pron2':'him',
@@ -158,8 +158,9 @@ Fuzzy = {
 #Group animals into story roles here:
 animals_distr = {
   1:Scoobert,
-  2:Furbz
-  3:Snakey
+  2:Furbz,
+  3:Snakey,
+  4:Fuzzy
 }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
