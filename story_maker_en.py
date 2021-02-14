@@ -138,11 +138,20 @@ Furbz = {
     'pron3':'her',
     'descr':'a snuggly kitty'
     }
+Snakey = {
+    'spec':'snake',
+    'name':'Snakey',
+    'pron1':'it',
+    'pron2':'it',
+    'pron3':'its',
+    'descr':'a cute ribbon snake'
+    }
 
 #Group animals into story roles here:
 animals_distr = {
   1:Scoobert,
   2:Furbz
+  3:Snakey
 }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
