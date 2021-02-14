@@ -146,6 +146,14 @@ Snakey = {
     'pron3':'its',
     'descr':'a cute ribbon snake'
     }
+Fuzzy = {
+    'spec':'rar',
+    'name':'Fuzzy',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a gray rat with fuzzy fur'
+    }
 
 #Group animals into story roles here:
 animals_distr = {
