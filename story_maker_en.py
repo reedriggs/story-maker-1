@@ -122,6 +122,8 @@ people_distr = {
 }
 
 #Create animals for the story in Python dictionary format, providing category information that match the Animal_en class below:
+#dog, fish, bird, horse, chicken, cat, bear, fox, turkey, wolf, deer, duck, tiger, cow, mouse, eagle, snake, lion, rat, pig
+
 Scoobert = {
     'spec':'dog',
     'name':'Scoobert',
@@ -164,6 +166,7 @@ animals_distr = {
 }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
+
 Mug = {
     'sing':'mug',
     'plur':'mugs',
@@ -214,6 +217,23 @@ places_distr = {
     },
 }
 
+#Body
+#hand, eye, head, face, back, arm, hair, leg, shoulder, finger, mouth, ear, foot, knee, neck, lip
+
+#Clothing
+#suit, shoe, ring, shirt, dress, hat, tie, coat, jacket, boot, belt, pants, glove, uniform, skirt, jeans, sock, sweater
+
+#Colors
+#white, black, red, green, blue, brown, yellow, gray, golden, pink, orange, purple
+
+#Emotions, positive:
+#happy, glad, confident, pleased, excited, satisfied, hopeful, loving
+
+#Emotions, neutral:
+#surprised, shy, cautious, thoughtful, tense, puzzled, energetic, exhausted
+
+#Emotions, negative:
+#sorry, afraid, angry, crazy, guilty, nervous, scared, desperate, worried, bitter, uncomfortable, anxious, lonely
 
 #Class categories make story-related words substitutable in the plot template texts, below.
 class Person_en:
