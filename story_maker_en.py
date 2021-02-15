@@ -166,7 +166,7 @@ Furbz = {
     'name':'Furbz',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'her',
+    'pron3':'hers',
     'descr':'a snuggly kitty'
     }
 Snakey = {
@@ -185,6 +185,38 @@ Fuzzy = {
     'pron3':'his',
     'descr':'a gray rat with fuzzy fur'
     }
+Angel = {
+    'spec':'fish',
+    'name':'Angel',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'an angel fish that likes to nibble'
+    }
+Rider = {
+    'spec':'bird',
+    'name':'Rider',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':"a songbird with his father's songs"
+    }
+Lindy = {
+    'spec':'horse',
+    'name':'Lindy',
+    'pron1':'he',
+    'pron2':'him',
+    'pron3':'his',
+    'descr':'a very lucky horse'
+    }
+Henny-Lou = {
+    'spec':'chicken',
+    'name':'Henny-Lou',
+    'pron1':'she',
+    'pron2':'her',
+    'pron3':'hers',
+    'descr':'an attention-seeking chicken'
+    }
 
 #Group animals into story roles here:
 animals_distr = {
@@ -192,6 +224,10 @@ animals_distr = {
   2:Furbz,
   3:Snakey,
   4:Fuzzy
+  5:Angel
+  6:Rider
+  7:Lindy
+  8:Henny-Lou
 }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
