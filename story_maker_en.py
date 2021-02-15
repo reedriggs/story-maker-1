@@ -92,6 +92,15 @@ Matias_Pie = {
     'surpised': 'Cool, cool, cool.' 
     }
 
+#Family
+#child, mother, father, kid, parent, wife, son, baby, brother, husband, daughter, sister, mom, dad, uncle, twin, aunt, grandmother, daddy, cousin, mama, grandfather, ancestor
+
+#Professions, general
+#president, director, official, worker, manager, expert, employee, agent, researcher, chief, investigator, boss
+
+#Professions, specific
+#teacher, doctor, author, artist, professor, lawyer, editor, coach, writer, attorney, scientist, secretary, judge, reporter, actor, athlete, farmer, pilot, engineer, producer, nurse, journalist
+
 #Group people into story roles here:
 people_distr = {
     1: {
@@ -167,6 +176,18 @@ animals_distr = {
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
 
+#Transportation
+#car, train, ship, plane, truck, boat, bus, van, bike, jet, helicopter, airplane, automobile, bicycle, cab, metro, taxi, subway, ferry, ambulance, motorcycle
+
+#Materials
+#paper, glass, wood, stone, gold, plastic, metal, lead, silver, steel, leather, cotton, fabric, brick, silk, rubber, aluminum, copper, marble, bronze, ink, ceramic
+
+#Meal-related
+#cup, dinner, plate, lunch, meal, knife, breakfast, fork, spoon, grill, snack, supper, picnic, napkin, toothpick
+
+#Foods
+#fish, ice, salt, egg, sugar, chicken, fruit, pepper, meat, rice, vegetable, cream, apple, milk, cheese, bread, turkey, sauce, potato, bean, butter, tomato, corn, cake, onion, roll, chocolate, salad
+
 Mug = {
     'sing':'mug',
     'plur':'mugs',
@@ -204,6 +225,13 @@ items_distr = {
 }
 
 #Create places here:
+
+#Weather, adjectives
+#hot, cold, cool, warm, dry, mild, sunny, damp, icy, chilly, windy, cloudy, humid, foggy, overcast, scorching
+
+#Weather, nouns
+#rain, snow, flood, shower, hail, thunder, drizzle, season, sun, heat, wind, ice, sky, storm, temperature, cloud, dust, climate, hurricane, breeze, forecast, lightning, fog, drought, rainbow, sunshine, haze, avalanche, tornado, humidity, pollen, thermometer...Ferenheit...Celcius
+
 places_distr = {
   1: {
     'name':'Atlanta',
@@ -234,6 +262,8 @@ places_distr = {
 
 #Emotions, negative:
 #sorry, afraid, angry, crazy, guilty, nervous, scared, desperate, worried, bitter, uncomfortable, anxious, lonely
+
+
 
 #Class categories make story-related words substitutable in the plot template texts, below.
 class Person_en:
