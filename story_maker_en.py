@@ -8,7 +8,9 @@ Amaia_Hail = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a sharp-witted human being',
-    'surpised': 'Hotchie motchie!'
+    'surprised': 'Hotchie motchie!'
+    'mother':'author'
+    'father':'teacher'
     }
 Mia_Wind = {
     'name':'Mia',
@@ -17,7 +19,9 @@ Mia_Wind = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a competitive maker-happener',
-    'surpised': 'What is all this?!'
+    'surprised': 'What is all this?!'
+    'mother':'professor'
+    'father':'lawyer'
     }
 Lyla_Card = {
     'name':'Lyla',
@@ -26,7 +30,9 @@ Lyla_Card = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a steadfast fixer of things',
-    'surpised': 'Show me more.'
+    'surprised': 'Show me more.'
+    'mother':'judge'
+    'father':'editor'
     }
 Cora_Wool = {
     'name':'Cora',
@@ -35,7 +41,9 @@ Cora_Wool = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a caregiver at heart',
-    'surpised': 'Yes, okay...'
+    'surprised': 'Yes, okay...'
+    'mother':'farmer'
+    'father':'doctor'
     }
 River_Light = {
     'name':'River',
@@ -44,7 +52,9 @@ River_Light = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a sharply perceptive person',
-    'surpised': 'What now?'
+    'surprised': 'What now?'
+    'mother':'pilot'
+    'father':'nurse'
     }
 Rhett_Hare = {
     'name':'Rhett',
@@ -53,7 +63,9 @@ Rhett_Hare = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a steadfast fixer of things',
-    'surpised': 'Hehhhhhhh.'
+    'surprised': 'Hehhhhhhh.'
+    'mother':'author'
+    'father':'coach'
     }
 Samuel_Journey = {
     'name':'Samuel',
@@ -62,7 +74,9 @@ Samuel_Journey = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a sharp-witted human being',
-    'surpised': 'Bring it!'
+    'surprised': 'Bring it!'
+    'mother':'scientist'
+    'father':'reporter'
     }
 Lorenzo_Wind = {
     'name':'Lorenzo',
@@ -71,7 +85,9 @@ Lorenzo_Wind = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a sharply perceptive person',
-    'surpised': 'What is happening?'
+    'surprised': 'What is happening?'
+    'mother':'professor'
+    'father':'secretary'
     }
 Bennett_Feel = {
     'name':'Bennett',
@@ -80,7 +96,9 @@ Bennett_Feel = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a caregiver at heart',
-    'surpised': 'Hmm.' 
+    'surprised': 'Hmm.'
+    'mother':'actor'
+    'father':'musician'
     }
 Matias_Pie = {
     'name':'Matias',
@@ -89,7 +107,9 @@ Matias_Pie = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a competitive maker-happener',
-    'surpised': 'Cool, cool, cool.' 
+    'surprised': 'Cool, cool, cool.'
+    'mother':'engineer'
+    'father':'attorney'
     }
 
 #Family
@@ -273,6 +293,9 @@ class Person_en:
     self.pron2 = dict['pron2']
     self.pron3 = dict['pron3']
     self.descr = dict['descr']
+    self.surpr = dict['surprised']
+    self.mom = dict['mother']
+    self.dad = dict['father']
 
 class Animal_en:
   def __init__(self, dict):
@@ -283,14 +306,12 @@ class Animal_en:
     self.pron3 = dict['pron3']
     self.descr = dict['descr']
 
-#Leave alone.
 class Place_en:
   def __init__(self, dict):
     self.name = dict['name']
     self.descr1 = dict['descr1']
     self.descr2 = dict['descr2']
 
-#leave alone
 class Item_en:
   def __init__(self, dict):
     self.sing = dict['sing']
