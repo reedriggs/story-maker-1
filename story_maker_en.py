@@ -122,6 +122,8 @@ Matias_Pie = {
 #teacher, doctor, author, artist, professor, lawyer, editor, coach, writer, attorney, scientist, secretary, judge, reporter, actor, athlete, farmer, pilot, engineer, producer, nurse, journalist
 
 #Group people into story roles here:
+#Story roles: protagonist_1, protagonist_2, ally_1, ally_2, ally_3, opponent_1, opponent_2, fake_ally_opp_1, fake_ally_opp_2, fake_opp_ally_1, fake_opp_ally_2
+
 people_distr = {
     1: {
     'protag1':Amaia_Hail,
