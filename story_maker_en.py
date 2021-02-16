@@ -8,8 +8,8 @@ Amaia_Hail = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a sharp-witted human being',
-    'surprised': 'Hotchie motchie!'
-    'mother':'author'
+    'surprised': 'Hotchie motchie!',
+    'mother':'author',
     'father':'teacher'
     }
 Mia_Wind = {
@@ -19,8 +19,8 @@ Mia_Wind = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a competitive maker-happener',
-    'surprised': 'What is all this?!'
-    'mother':'professor'
+    'surprised': 'What is all this?!',
+    'mother':'professor',
     'father':'lawyer'
     }
 Lyla_Card = {
@@ -30,8 +30,8 @@ Lyla_Card = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a steadfast fixer of things',
-    'surprised': 'Show me more.'
-    'mother':'judge'
+    'surprised': 'Show me more.',
+    'mother':'judge',
     'father':'editor'
     }
 Cora_Wool = {
@@ -41,8 +41,8 @@ Cora_Wool = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a caregiver at heart',
-    'surprised': 'Yes, okay...'
-    'mother':'farmer'
+    'surprised': 'Yes, okay...',
+    'mother':'farmer',
     'father':'doctor'
     }
 River_Light = {
@@ -52,8 +52,8 @@ River_Light = {
     'pron2':'her',
     'pron3':'hers',
     'descr':'a sharply perceptive person',
-    'surprised': 'What now?'
-    'mother':'pilot'
+    'surprised': 'What now?',
+    'mother':'pilot',
     'father':'nurse'
     }
 Rhett_Hare = {
@@ -63,8 +63,8 @@ Rhett_Hare = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a steadfast fixer of things',
-    'surprised': 'Hehhhhhhh.'
-    'mother':'author'
+    'surprised': 'Hehhhhhhh.',
+    'mother':'author',
     'father':'coach'
     }
 Samuel_Journey = {
@@ -74,8 +74,8 @@ Samuel_Journey = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a sharp-witted human being',
-    'surprised': 'Bring it!'
-    'mother':'scientist'
+    'surprised': 'Bring it!',
+    'mother':'scientist',
     'father':'reporter'
     }
 Lorenzo_Wind = {
@@ -85,8 +85,8 @@ Lorenzo_Wind = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a sharply perceptive person',
-    'surprised': 'What is happening?'
-    'mother':'professor'
+    'surprised': 'What is happening?',
+    'mother':'professor',
     'father':'secretary'
     }
 Bennett_Feel = {
@@ -96,8 +96,8 @@ Bennett_Feel = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a caregiver at heart',
-    'surprised': 'Hmm.'
-    'mother':'actor'
+    'surprised': 'Hmm.',
+    'mother':'actor',
     'father':'musician'
     }
 Matias_Pie = {
@@ -107,8 +107,8 @@ Matias_Pie = {
     'pron2':'him',
     'pron3':'his',
     'descr':'a competitive maker-happener',
-    'surprised': 'Cool, cool, cool.'
-    'mother':'engineer'
+    'surprised': 'Cool, cool, cool.',
+    'mother':'engineer',
     'father':'attorney'
     }
 
@@ -211,7 +211,7 @@ Lindy = {
     'pron3':'his',
     'descr':'a very lucky horse'
     }
-Henny-Lou = {
+Henny_Lou = {
     'spec':'chicken',
     'name':'Henny-Lou',
     'pron1':'she',
@@ -225,11 +225,11 @@ animals_distr = {
   1:Scoobert,
   2:Furbz,
   3:Snakey,
-  4:Fuzzy
-  5:Angel
-  6:Rider
-  7:Lindy
-  8:Henny-Lou
+  4:Fuzzy,
+  5:Angel,
+  6:Rider,
+  7:Lindy,
+  8:Henny_Lou
 }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
