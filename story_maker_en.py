@@ -128,26 +128,67 @@ people_distr = {
     1: {
     'protag1':Amaia_Hail,
     'protag2':Rhett_Hare,
-    'antag1':Lyla_Card
+    'ally1':0,
+    'ally2':0,
+    'ally3':0,
+    'opponent1':0,
+    'opponent2':0,
+    'fake_ally_opp_1':0,
+    'fake_ally_opp_2':0,
+    'fake_opp_ally_1':0,
+    'antag1':Lyla_Card,
+    
     },
     2: {
     'protag1':Samuel_Journey,
     'protag2':Mia_Wind,
+    'ally1':0,
+    'ally2':0,
+    'ally3':0,
+    'opponent1':0,
+    'opponent2':0,
+    'fake_ally_opp_1':0,
+    'fake_ally_opp_2':0,
+    'fake_opp_ally_1':0,
     'antag1':River_Light
     },
     3: {
     'protag1':Mia_Wind,
     'protag2':Bennett_Feel,
+    'ally1':0,
+    'ally2':0,
+    'ally3':0,
+    'opponent1':0,
+    'opponent2':0,
+    'fake_ally_opp_1':0,
+    'fake_ally_opp_2':0,
+    'fake_opp_ally_1':0,
     'antag1':Lyla_Card
     },
     4: {
     'protag1':Lorenzo_Wind,
     'protag2':River_Light,
+    'ally1':0,
+    'ally2':0,
+    'ally3':0,
+    'opponent1':0,
+    'opponent2':0,
+    'fake_ally_opp_1':0,
+    'fake_ally_opp_2':0,
+    'fake_opp_ally_1':0,
     'antag1':Cora_Wool
     },
     5: {
     'protag1':Cora_Wool,
     'protag2':Matias_Pie,
+    'ally1':0,
+    'ally2':0,
+    'ally3':0,
+    'opponent1':0,
+    'opponent2':0,
+    'fake_ally_opp_1':0,
+    'fake_ally_opp_2':0,
+    'fake_opp_ally_1':0,
     'antag1':Lorenzo_Wind
     }
 }
