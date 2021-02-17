@@ -278,6 +278,40 @@ animals_distr = {
 #Transportation
 #car, train, ship, plane, truck, boat, bus, van, bike, jet, helicopter, airplane, automobile, bicycle, cab, metro, taxi, subway, ferry, ambulance, motorcycle
 
+#Colors
+#white, black, red, green, blue, brown, yellow, gray, golden, pink, orange, purple
+
+car = {
+  'vehicle':'car',
+  'verb':'drive',
+  'pt':'drove',
+  'color':'white'
+}
+truck = {
+  'vehicle':'truck',
+  'verb':'drive',
+  'pt':'drove',
+  'color':'black'
+}
+helicopter = {
+  'vehicle':'helicopter',
+  'verb':'fly',
+  'pt':'flew',
+  'color':'golden'
+}
+train = {
+  'vehicle':'train',
+  'verb':'ride',
+  'pt':'rode',
+  'color':'green'
+}
+train = {
+  'vehicle':'plane',
+  'verb':'take',
+  'pt':'took',
+  'color':'gray'
+}
+
 #Materials
 #paper, glass, wood, stone, gold, plastic, metal, lead, silver, steel, leather, cotton, fabric, brick, silk, rubber, aluminum, copper, marble, bronze, ink, ceramic
 
@@ -349,9 +383,6 @@ places_distr = {
 
 #Clothing
 #suit, shoe, ring, shirt, dress, hat, tie, coat, jacket, boot, belt, pants, glove, uniform, skirt, jeans, sock, sweater
-
-#Colors
-#white, black, red, green, blue, brown, yellow, gray, golden, pink, orange, purple
 
 #Emotions, positive:
 #happy, glad, confident, pleased, excited, satisfied, hopeful, loving
