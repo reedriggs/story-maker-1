@@ -196,7 +196,7 @@ people_distr = {
 #Create animals for the story in Python dictionary format, providing category information that match the Animal_en class below:
 #dog, fish, bird, horse, chicken, cat, bear, fox, turkey, wolf, deer, duck, tiger, cow, mouse, eagle, snake, lion, rat, pig
 
-Scoobert = {
+dog = {
     'spec':'dog',
     'name':'Scoobert',
     'pron1':'he',
@@ -204,7 +204,7 @@ Scoobert = {
     'pron3':'his',
     'descr':'a big happy puppy'
     }
-Furbz = {
+cat = {
     'spec':'cat',
     'name':'Furbz',
     'pron1':'she',
@@ -212,7 +212,7 @@ Furbz = {
     'pron3':'hers',
     'descr':'a snuggly kitty'
     }
-Snakey = {
+snake = {
     'spec':'snake',
     'name':'Snakey',
     'pron1':'it',
@@ -220,7 +220,7 @@ Snakey = {
     'pron3':'its',
     'descr':'a cute ribbon snake'
     }
-Fuzzy = {
+rat = {
     'spec':'rat',
     'name':'Fuzzy',
     'pron1':'he',
@@ -228,7 +228,7 @@ Fuzzy = {
     'pron3':'his',
     'descr':'a gray rat with fuzzy fur'
     }
-Angel = {
+fish = {
     'spec':'fish',
     'name':'Angel',
     'pron1':'she',
@@ -236,7 +236,7 @@ Angel = {
     'pron3':'hers',
     'descr':'an angel fish that likes to nibble'
     }
-Rider = {
+bird = {
     'spec':'bird',
     'name':'Rider',
     'pron1':'he',
@@ -244,7 +244,7 @@ Rider = {
     'pron3':'his',
     'descr':"a songbird with his father's songs"
     }
-Lindy = {
+horse = {
     'spec':'horse',
     'name':'Lindy',
     'pron1':'he',
@@ -252,7 +252,7 @@ Lindy = {
     'pron3':'his',
     'descr':'a very lucky horse'
     }
-Henny_Lou = {
+chicken = {
     'spec':'chicken',
     'name':'Henny-Lou',
     'pron1':'she',
@@ -263,14 +263,14 @@ Henny_Lou = {
 
 #Group animals into story roles here:
 animals_distr = {
-  1:Scoobert,
-  2:Furbz,
-  3:Snakey,
-  4:Fuzzy,
-  5:Angel,
-  6:Rider,
-  7:Lindy,
-  8:Henny_Lou
+  1:dog,
+  2:cat,
+  3:snake,
+  4:rat,
+  5:fish,
+  6:bird,
+  7:horse,
+  8:chicken
 }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
@@ -329,6 +329,26 @@ vehicles_distr = {
 #Foods
 #fish, ice, salt, egg, sugar, chicken, fruit, pepper, meat, rice, vegetable, cream, apple, milk, cheese, bread, turkey, sauce, potato, bean, butter, tomato, corn, cake, onion, roll, chocolate, salad
 
+#Rooms with three normally associated items, ideally that can contain other things or itself be used or manipulated
+kitchen = {
+  'place':'kitchen',
+  'has1':'sink',
+  'has1prep':'in',
+  'has2':'stove',
+  'has2prep':'on',
+  'has3':'refrigerator',
+  'has3prep':'in'
+bedroom = {
+  'place':'bedroom',
+  'has1':'bed',
+  'has1prep':'on',
+  'has2':'dresser',
+  'has2prep':'on',
+  'has3':'dresser drawer',
+  'has3prep':'in'	
+}
+
+#Random items, consider incorporating into home rooms above
 Mug = {
     'sing':'mug',
     'plur':'mugs',
