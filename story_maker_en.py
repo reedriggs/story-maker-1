@@ -305,12 +305,20 @@ train = {
   'pt':'rode',
   'color':'green'
 }
-train = {
+bus = {
   'vehicle':'plane',
   'verb':'take',
   'pt':'took',
   'color':'gray'
 }
+
+vehicles_distr = {
+  1:car,
+  2:truck,
+  3:helicopter,
+  4:train,
+  5:bus
+  }
 
 #Materials
 #paper, glass, wood, stone, gold, plastic, metal, lead, silver, steel, leather, cotton, fabric, brick, silk, rubber, aluminum, copper, marble, bronze, ink, ceramic
@@ -393,8 +401,6 @@ places_distr = {
 #Emotions, negative:
 #sorry, afraid, angry, crazy, guilty, nervous, scared, desperate, worried, bitter, uncomfortable, anxious, lonely
 
-
-
 #Class categories make story-related words substitutable in the plot template texts, below.
 class Person_en:
   def __init__(self, dict):
@@ -422,6 +428,13 @@ class Place_en:
     self.descr1 = dict['descr1']
     self.descr2 = dict['descr2']
 
+class Vehicle_en:
+  def __init__(self, dict):
+    self.name = dict['vehicle']
+    self.verb = dict['verb']
+    self.past = dict['pt']
+    self.color = dict['color']
+
 class Item_en:
   def __init__(self, dict):
     self.sing = dict['sing']
@@ -446,6 +459,10 @@ antag1 = Person_en(people_distr[peopR]['antag1'])
 animR = randomize(len(animals_distr))
 pet1 = Animal_en(animals_distr[animR])
 
+vehR = randomize(len(vehicles_distr))
+veh1 = Vehicle_en(vehicles_distr[vehR])
+veh2 = Vehicle_en(vehicles_distr[vehR])
+
 itemR = randomize(len(items_distr))
 item1 = Item_en(items_distr[itemR])
 item2 = Item_en(items_distr[itemR])
@@ -456,7 +473,7 @@ home = Place_en(places_distr[placeR])
 
 #Modify plot template(s) here:
 plot1 = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}. They had all been here before."
-plot2 = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capitalize()} was holding a part from {appliance1.det} {appliance1.descr1} {appliance1.sing}. "I think I did this before," {protag1.pron1} said to {protag1.pron2}self. {protag1.name} looked around. "I should go," {protag1.pron1} said. '
+plot2 = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capitalize()} was holding a part from {appliance1.det} {appliance1.descr1} {appliance1.sing}. "I think I did this before," {protag1.pron1} said to {protag1.pron2}self. {protag1.name} looked around. "I should go," {protag1.pron1} said. Just then, {protag2.name} walked the front door. "How did you get here so fast?" {protag1.name} asked. "I {veh1.past} my family\'s new {veh1.name}," {protag2.pron1} said.'
 
 #Create dictionaries containing plot templates
 plots = {
