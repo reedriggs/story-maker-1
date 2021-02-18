@@ -469,6 +469,8 @@ scene1a = f"\"Wait!,\" {protag1.name} said, \"We were just here.\" \"I was stand
 #Act 2, where the characters try to understand and fix the disruption, finding small success
 
 #Act 3, where the characters discover that they only live as code written for language learners
+  #responses include: taking up hobbies, reading jokes together and laughing, writing more, spiritual journies, exercising more, trying to escape
+  #create as foils
 
 #Act 4, where the characters hatch a new plan to escape
 
