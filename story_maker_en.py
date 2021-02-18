@@ -463,8 +463,16 @@ placeR = randomize(len(places_distr))
 home = Place_en(places_distr[placeR])
 
 #Modify plot template(s) here:
-#Act 1 scenes
-scene1a = f"\"Wait!,\" {protag1.name} said, \"We were just here.\""
+#Act 1, where home is introduced and then disrupted
+scene1a = f"\"Wait!,\" {protag1.name} said, \"We were just here.\" \"I was standing over there last time,\" {protag1.pron1} said."
+
+#Act 2, where the characters try to understand and fix the disruption, finding small success
+
+#Act 3, where the characters discover that they only live as code written for language learners
+
+#Act 4, where the characters hatch a new plan to escape
+
+#Act 5, where each character deals with their new knowledge of the code-world in which they live
 
 plot_y = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}. They had all been here before."
 plot_z = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capitalize()} was holding a part from {appliance1.det} {appliance1.descr1} {appliance1.sing}. "I think I did this before," {protag1.pron1} said to {protag1.pron2}self. {protag1.name} looked around. "I should go," {protag1.pron1} said. Just then, {protag2.name} walked the front door. "How did you get here so fast?" {protag1.name} asked. "I {veh1.past} my family\'s new {veh1.name}," {protag2.pron1} said.'
