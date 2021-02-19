@@ -319,6 +319,11 @@ bedroom = {
   'has3prep':'in'	
 }
 
+rooms_distr = {
+    1:kitchen,
+    2:bedroom
+    }
+
 #Random items, consider incorporating into home rooms above
 Mug = {
     'sing':'mug',
@@ -418,6 +423,16 @@ class Place_en:
     self.name = dict['name']
     self.descr1 = dict['descr1']
     self.descr2 = dict['descr2']
+    
+class Room_en:
+  def __init__(self, dict):
+    self.name = dict['place']
+    self.has1 = dict['has1']
+    self.has1pr = dict['has1prep']
+    self.has2 = dict['has2']
+    self.has2pr = dict['has2prep']
+    self.has3 = dict['has3']
+    self.has3pr = dict['has3prep']
 
 class Vehicle_en:
   def __init__(self, dict):
@@ -445,7 +460,14 @@ def randomize(n):
 peopR = randomize(len(people_distr))
 protag1 = Person_en(people_distr[peopR]['protag1'])
 protag2 = Person_en(people_distr[peopR]['protag2'])
+ally1 = Person_en(people_distr[peopR]['ally1'])
+ally2 = Person_en(people_distr[peopR]['ally2'])
+ally3 = Person_en(people_distr[peopR]['ally3'])
 antag1 = Person_en(people_distr[peopR]['antag1'])
+antag2 = Person_en(people_distr[peopR]['antag2'])
+fake_ally_opp_1 = Person_en(people_distr[peopR]['fake_ally_opp_1'])
+fake_ally_opp_2 = Person_en(people_distr[peopR]['fake_ally_opp_2'])
+fake_opp_ally_1 = Person_en(people_distr[peopR]['fake_opp_ally_1'])
 
 animR = randomize(len(animals_distr))
 pet1 = Animal_en(animals_distr[animR])
@@ -462,9 +484,13 @@ appliance1 = Item_en(items_distr[itemR])
 placeR = randomize(len(places_distr))
 home = Place_en(places_distr[placeR])
 
+roomR = randomize(len(rooms_distr))
+room = Room_en(rooms_distr[placeR])
+
 #Modify plot template(s) here:
 #Act 1, where home is introduced and then disrupted
 scene1a = f"\"Wait!,\" {protag1.name} said, \"We were just here.\" \"I was standing over there last time,\" {protag1.pron1} said."
+scene2a = f"In a house in Houston, Texas, in the {room.name}, {protag1.name} looked at {ally1.name} and {fake_ally_opp_1.name}."
 
 #Act 2, where the characters try to understand and fix the disruption, finding small success
 
@@ -482,8 +508,9 @@ plot_z = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capita
 #Create dictionaries containing plot templates
 plots = {
     1:scene1a,
-	2:plot_y,
-	3:plot_z
+    2:scene2a,
+	3:plot_y,
+	4:plot_z
 }
 
 #A goal is to be able to simply call plot templates with slot content
