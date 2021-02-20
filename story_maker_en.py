@@ -6,7 +6,7 @@ Amaia_Hail = {
     'surname':'Hail',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'a sharp-witted human being',
     'surprised': 'Hotchie motchie!',
     'mother':'author',
@@ -17,7 +17,7 @@ Mia_Wind = {
     'surname':'Wind',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'a competitive maker-happener',
     'surprised': 'What is all this?!',
     'mother':'professor',
@@ -28,7 +28,7 @@ Lyla_Card = {
     'surname':'Card',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'a steadfast fixer of things',
     'surprised': 'Show me more.',
     'mother':'judge',
@@ -39,7 +39,7 @@ Cora_Wool = {
     'surname':'Wool',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'a caregiver at heart',
     'surprised': 'Yes, okay...',
     'mother':'farmer',
@@ -50,7 +50,7 @@ River_Light = {
     'surname':'Light',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'a sharply perceptive person',
     'surprised': 'What now?',
     'mother':'pilot',
@@ -179,7 +179,7 @@ cat = {
     'name':'Furbz',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'a snuggly kitty'
     }
 snake = {
@@ -203,7 +203,7 @@ fish = {
     'name':'Angel',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'an angel fish that likes to nibble'
     }
 bird = {
@@ -227,21 +227,21 @@ chicken = {
     'name':'Henny-Lou',
     'pron1':'she',
     'pron2':'her',
-    'pron3':'hers',
+    'pron3':'her',
     'descr':'an attention-seeking chicken'
     }
 
 #Group animals into story roles here:
 animals_distr = {
-  1:dog,
-  2:cat,
-  3:snake,
-  4:rat,
-  5:fish,
-  6:bird,
-  7:horse,
-  8:chicken
-}
+    1:dog,
+    2:cat,
+    3:snake,
+    4:rat,
+    5:fish,
+    6:bird,
+    7:horse,
+    8:chicken
+    }
 
 #Create physical items for the story in Python dictionary format, providing category information that match the Item_en class below:
 
@@ -252,43 +252,43 @@ animals_distr = {
 #white, black, red, green, blue, brown, yellow, gray, golden, pink, orange, purple
 
 car = {
-  'vehicle':'car',
-  'verb':'drive',
-  'pt':'drove',
-  'color':'white'
-}
+    'vehicle':'car',
+    'verb':'drive',
+    'pt':'drove',
+    'color':'white'
+    }
 truck = {
-  'vehicle':'truck',
-  'verb':'drive',
-  'pt':'drove',
-  'color':'black'
-}
+    'vehicle':'truck',
+    'verb':'drive',
+    'pt':'drove',
+    'color':'black'
+    }
 helicopter = {
-  'vehicle':'helicopter',
-  'verb':'fly',
-  'pt':'flew',
-  'color':'golden'
-}
+    'vehicle':'helicopter',
+    'verb':'fly',
+    'pt':'flew',
+    'color':'golden'
+    }
 train = {
-  'vehicle':'train',
-  'verb':'ride',
-  'pt':'rode',
-  'color':'green'
-}
+    'vehicle':'train',
+    'verb':'ride',
+    'pt':'rode',
+    'color':'green'
+    }
 bus = {
-  'vehicle':'plane',
-  'verb':'take',
-  'pt':'took',
-  'color':'gray'
-}
+    'vehicle':'plane',
+    'verb':'take',
+    'pt':'took',
+    'color':'gray'
+    }
 
 vehicles_distr = {
-  1:car,
-  2:truck,
-  3:helicopter,
-  4:train,
-  5:bus
-  }
+    1:car,
+    2:truck,
+    3:helicopter,
+    4:train,
+    5:bus
+    }
 
 #Materials
 #paper, glass, wood, stone, gold, plastic, metal, lead, silver, steel, leather, cotton, fabric, brick, silk, rubber, aluminum, copper, marble, bronze, ink, ceramic
@@ -301,27 +301,47 @@ vehicles_distr = {
 
 #Rooms with three normally associated items, ideally that can contain other things or itself be used or manipulated
 kitchen = {
-  'place':'kitchen',
-  'has1':'sink',
-  'has1prep':'in',
-  'has2':'stove',
-  'has2prep':'on',
-  'has3':'refrigerator',
-  'has3prep':'in'
-  }
+    'place':'kitchen',
+    'has1':'sink',
+    'has1prep':'in',
+    'has2':'stove',
+    'has2prep':'on',
+    'has3':'refrigerator',
+    'has3prep':'in'
+    }
 bedroom = {
-  'place':'bedroom',
-  'has1':'bed',
-  'has1prep':'on',
-  'has2':'dresser',
-  'has2prep':'on',
-  'has3':'dresser drawer',
-  'has3prep':'in'	
-}
+    'place':'bedroom',
+    'has1':'bed',
+    'has1prep':'on',
+    'has2':'dresser',
+    'has2prep':'on',
+    'has3':'dresser drawer',
+    'has3prep':'in'	
+    }
+bathroom = {
+    'place':'bathroom',
+    'has1':'toilet',
+    'has1prep':'in',
+    'has2':'cabinet',
+    'has2prep':'in',
+    'has3':'bath tub',
+    'has3prep':'in'	
+    }
+living_room = {
+    'place':'living room',
+    'has1':'TV',
+    'has1prep':'on',
+    'has2':'couch',
+    'has2prep':'on',
+    'has3':'carpet',
+    'has3prep':'on'	
+    }
 
 rooms_distr = {
     1:kitchen,
-    2:bedroom
+    2:bedroom,
+    3:bathroom,
+    4:living_room
     }
 
 #Random items, consider incorporating into home rooms above
@@ -356,10 +376,10 @@ Water = {
     }
 
 items_distr = {
-  1: Mug,
-  2: Kitchen_sink,
-  3: Water
-}
+    1: Mug,
+    2: Kitchen_sink,
+    3: Water
+    }
 
 #Create places here:
 
@@ -370,17 +390,17 @@ items_distr = {
 #rain, snow, flood, shower, hail, thunder, drizzle, season, sun, heat, wind, ice, sky, storm, temperature, cloud, dust, climate, hurricane, breeze, forecast, lightning, fog, drought, rainbow, sunshine, haze, avalanche, tornado, humidity, pollen, thermometer...Ferenheit...Celcius
 
 places_distr = {
-  1: {
-    'name':'Atlanta',
-    'descr1':'a very green and very sunny place to live',
-    'descr2':'a place where childhood memories would remimain, but was not a home to adventure'
-    },
-  2: {
-    'name':'Boise',
-    'descr1':'a quiet place',
-    'descr2':'a very boring place'
-    },
-}
+    1: {
+      'name':'Atlanta',
+      'descr1':'a very green and very sunny place to live',
+      'descr2':'a place where childhood memories would remimain, but was not a home to adventure'
+      },
+    2: {
+      'name':'Boise',
+      'descr1':'a quiet place',
+      'descr2':'a very boring place'
+      },
+    }
 
 #Body
 #hand, eye, head, face, back, arm, hair, leg, shoulder, finger, mouth, ear, foot, knee, neck, lip
@@ -509,8 +529,8 @@ plot_z = f'{protag1.name} looked at {protag1.pron3} hands. {protag1.pron1.capita
 plots = {
     1:scene1a,
     2:scene2a,
-	3:plot_y,
-	4:plot_z
+    3:plot_y,
+    4:plot_z
 }
 
 #A goal is to be able to simply call plot templates with slot content
