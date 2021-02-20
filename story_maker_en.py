@@ -489,7 +489,7 @@ room = Room_en(rooms_distr[placeR])
 
 #Modify plot template(s) here:
 #Act 1, where home is introduced and then disrupted
-scene1a = f"\"Wait!,\" {protag1.name} said, \"We were just here.\" \"I was standing over there last time,\" {protag1.pron1} said."
+scene1a = f"\"Wait!,\" {protag1.name} said, \"We were just here.\" \"I was standing over there last time,\" {protag1.pron1} said. {protag1.name} tried to remember what was happening just a few moments before, but memories slipped away much like right after waking up from a dream. And then everything ended again."
 scene2a = f"In a house in Houston, Texas, in the {room.name}, {protag1.name} looked at {ally1.name} and {fake_ally_opp_1.name}. {protag1.name} thought something seemed strange. \"What were we doing just now, or, just before now?\" {ally1.name} and {fake_ally_opp_1.name} had no idea. \"Are you hungry? Should we eat?\" {protag1.name} asked. \"Sure,\" {ally1.name} answered, but just then things came to an end."
 
 #Act 2, where the characters try to understand and fix the disruption, finding small success
