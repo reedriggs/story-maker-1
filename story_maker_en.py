@@ -520,7 +520,7 @@ Act1_scene2a = f"In a house in Houston, Texas, in the {room.name}, {protag1.name
 
 #Act 4, where the characters hatch a new plan to escape
 Act4_scene1a = f"\"I'm fine here,\" said {protag1.name}. \"I know you all want to escape and whatever, but I have so much I can focus on and get done if I'm not spending all of my time trying to escape.\" Just then, everything ended again."
-
+Act4_scene2a = f"{protag1.name} was crying in a bathroom. \"Wait,\" asked {protag1.name}, \"why am I crying in a bathroom?\" All memories quickly disappeared, and that was the only familiar part of all of this. {protag1.name} felt content about just moving on... but that's when everything ended... again."
 #Act 5, where each character deals with their new knowledge of the code-world in which they live
 
 plot_y = f"There, in the middle of the floor was {item1.det} {item1.sing}. It was {item1.descr1_det} {item1.descr1} {item1.sing}, and it was {item1.descr2_det} {item1.descr2}, but no {item2.sing}... but {protag1.name} couldn't look at any {item1.plur} right now. {protag1.pron1.capitalize()} had zero patience for any {item1.plur} at this moment. {protag1.name} lived in {home.name}. {home.name} was {home.descr1}. {home.name} was {home.descr2}. One day {protag1.pron1} had a thought. {protag1.pron1.capitalize()} wanted to go for a swim. At the lake {protag1.name} saw {protag2.name}. {protag2.pron1.capitalize()} looked at {protag1.name}. But then {antag1.name} arrived. {antag1.name} had brought with {antag1.pron2} {pet1.descr} named {pet1.name}. They had all been here before."
