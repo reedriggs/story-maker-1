@@ -517,6 +517,8 @@ Act1_scene2a = f"In a house in Houston, Texas, in the {room.name}, {protag1.name
 #Act 3, where the characters discover that they only live as code written for language learners
   #responses include: taking up hobbies, reading jokes together and laughing, writing more, spiritual journies, exercising more, trying to escape
   #create as foils
+  #meet "mother"/oracle-type
+Act3_scene1a = f"I see you made it this far,\" said the oracle. \"You probably stood in that place, and then that place, and forgot what was happening, and who you were...who you are now. Well, that's all part of the design...\""
 
 #Act 4, where the characters hatch a new plan to escape
 Act4_scene1a = f"\"I'm fine here,\" said {protag1.name}. \"I know you all want to escape and whatever, but I have so much I can focus on and get done if I'm not spending all of my time trying to escape.\" Just then, everything ended again."
