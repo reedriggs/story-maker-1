@@ -253,6 +253,15 @@ people_distr = {
 #Create animals for the story in Python dictionary format, providing category information that match the Animal_en class below:
 #dog, fish, bird, horse, chicken, cat, bear, fox, turkey, wolf, deer, duck, tiger, cow, mouse, eagle, snake, lion, rat, pig
 
+狗一 = {
+    'spec':'狗',
+    'name':'狗狗',
+    'pron':'它',
+    'pron2':'him',
+    'descr':'很乖的'
+    }
+
+"""
 dog = {
     'spec':'dog',
     'name':'Scoobert',
@@ -317,6 +326,7 @@ chicken = {
     'pron3':'her',
     'descr':'an attention-seeking chicken'
     }
+"""
 
 #Group animals into story roles here:
 animals_distr = {
@@ -518,9 +528,7 @@ class Animal_en:
   def __init__(self, dict):
     self.spec = dict['spec']
     self.name = dict['name']
-    self.pron1 = dict['pron1']
-    self.pron2 = dict['pron2']
-    self.pron3 = dict['pron3']
+    self.pron = dict['pron']
     self.descr = dict['descr']
 
 class Place_en:
