@@ -110,119 +110,6 @@ import random
       '母親':'律師'
       }
 
-"""
-Amaia_Hail = {
-    'name':'Amaia',
-    'surname':'Hail',
-    'pron1':'she',
-    'pron2':'her',
-    'pron3':'her',
-    'descr':'a sharp-witted human being',
-    'surprised': 'Hotchie motchie!',
-    'mother':'author',
-    'father':'teacher'
-    }
-Mia_Wind = {
-    'name':'Mia',
-    'surname':'Wind',
-    'pron1':'she',
-    'pron2':'her',
-    'pron3':'her',
-    'descr':'a competitive maker-happener',
-    'surprised': 'What is all this?!',
-    'mother':'professor',
-    'father':'lawyer'
-    }
-Lyla_Card = {
-    'name':'Lyla',
-    'surname':'Card',
-    'pron1':'she',
-    'pron2':'her',
-    'pron3':'her',
-    'descr':'a steadfast fixer of things',
-    'surprised': 'Show me more.',
-    'mother':'judge',
-    'father':'editor'
-    }
-Cora_Wool = {
-    'name':'Cora',
-    'surname':'Wool',
-    'pron1':'she',
-    'pron2':'her',
-    'pron3':'her',
-    'descr':'a caregiver at heart',
-    'surprised': 'Yes, okay...',
-    'mother':'farmer',
-    'father':'doctor'
-    }
-River_Light = {
-    'name':'River',
-    'surname':'Light',
-    'pron1':'she',
-    'pron2':'her',
-    'pron3':'her',
-    'descr':'a sharply perceptive person',
-    'surprised': 'What now?',
-    'mother':'pilot',
-    'father':'nurse'
-    }
-Rhett_Hare = {
-    'name':'Rhett',
-    'surname':'Hare',
-    'pron1':'he',
-    'pron2':'him',
-    'pron3':'his',
-    'descr':'a steadfast fixer of things',
-    'surprised': 'Hehhhhhhh.',
-    'mother':'author',
-    'father':'coach'
-    }
-Samuel_Journey = {
-    'name':'Samuel',
-    'surname':'Journey',
-    'pron1':'he',
-    'pron2':'him',
-    'pron3':'his',
-    'descr':'a sharp-witted human being',
-    'surprised': 'Bring it!',
-    'mother':'scientist',
-    'father':'reporter'
-    }
-Lorenzo_Wind = {
-    'name':'Lorenzo',
-    'surname':'Wind',
-    'pron1':'he',
-    'pron2':'him',
-    'pron3':'his',
-    'descr':'a sharply perceptive person',
-    'surprised': 'What is happening?',
-    'mother':'professor',
-    'father':'secretary'
-    }
-Bennett_Feel = {
-    'name':'Bennett',
-    'surname':'Feel',
-    'pron1':'he',
-    'pron2':'him',
-    'pron3':'his',
-    'descr':'a caregiver at heart',
-    'surprised': 'Hmm.',
-    'mother':'actor',
-    'father':'musician'
-    }
-Matias_Pie = {
-    'name':'Matias',
-    'surname':'Pie',
-    'pron1':'he',
-    'pron2':'him',
-    'pron3':'his',
-    'descr':'a competitive maker-happener',
-    'surprised': 'Cool, cool, cool.',
-    'mother':'engineer',
-    'father':'attorney'
-    }
-"""
-
 #Family
 #child, mother, father, kid, parent, wife, son, baby, brother, husband, daughter, sister, mom, dad, uncle, twin, aunt, grandmother, daddy, cousin, mama, grandfather, ancestor
 
@@ -257,7 +144,13 @@ people_distr = {
     'spec':'狗',
     'name':'狗狗',
     'pron':'它',
-    'pron2':'him',
+    'descr':'很乖的'
+    }
+
+狗二 = {
+    'spec':'狗',
+    'name':'小白',
+    'pron':'它',
     'descr':'很乖的'
     }
 
