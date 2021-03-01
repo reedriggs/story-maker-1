@@ -653,8 +653,12 @@ set2 = Set_2()
 person2 = set2.named()
 pet2 = set2.owner()
 
+故事一a = f"{person1}想吃麵。{person1}很想吃麵。{person1}很想吃素麵。{person1}吃素，不吃肉。"
+
+“”“
 故事一a = f"{person1}和{person2}很期待搬到新的家。" + "\n" + "\n" + f"{person1}特別想用剛買的{pet2}，因為{用法甲}。" + "\n" "\n" + f"{person1}很期待新的{pet2}，因為可以{用法乙}！"
 故事二a = f"{person2}和{person1}很期待搬到新的辦公室。" + "\n" + "\n" + f"{person2}特別想用辦公室的的{pet1}，因為{用法甲}。" + "\n" "\n" + f"{person2}很期待用幫共識的{pet1}，因為可以{用法乙}！"
+”“”
 
 print(故事一a)
 print(故事二a)
